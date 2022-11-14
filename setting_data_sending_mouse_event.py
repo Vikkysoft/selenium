@@ -24,7 +24,7 @@ def main():
     #submit_button.click()
     form.find_element(By.XPATH, '//*[@id="__next"]/main/section[1]/div/div[1]/div[2]/form/div[5]/button').click()
     form.find_element(By.TAG_NAME, "button").click()
-    time.sleep(5)
+    time.sleep(15)
 
 
 

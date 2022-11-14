@@ -25,7 +25,7 @@ def locate_by_css_selector(driver):
 
 def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.get("https://www.testifyltd.com/contact")
+    driver.get("https://testifyltd.com/contact")
     # locate_by_tag_name(driver)
     locate_by_css_selector(driver)
 

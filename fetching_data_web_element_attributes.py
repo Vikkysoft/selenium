@@ -13,15 +13,11 @@ def print_element_attributes(element):
     print("Inner HTML:", element.get_attribute("innerHTML"))
 
 
-
-
-
-
 def main():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     driver.get("https://testifyltd.com/contact")
-    #academy_link = driver.find_element(By.LINK_TEXT, "Academy")
-    #print_element_attributes(academy_link)
+    # academy_link = driver.find_element(By.LINK_TEXT, "Academy")
+    # print_element_attributes(academy_link)
     academy_link = driver.find_element(By.TAG_NAME, "form")
     print_element_attributes(academy_link)
 
